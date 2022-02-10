@@ -37,4 +37,3 @@ module.exports = {
   PushEndpoint,
   EmailSubscription
 };
-

@@ -24,7 +24,7 @@
     "caching": "node --max-old-space-size=8000 caching/runCaching.js",
     "both": "node --max-old-space-size=4096 app.js & node --max-old-space-size=8000 caching/runCaching.js",
     "nodemonboth": "nodemon --exec npm run both",
-    "ngrok": "./node_modules/ngrok/bin/ngrok http 3000"
+    "ngrok": "node_modules\\ngrok\\bin\\ngrok http 3000"
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
@@ -86,7 +86,7 @@
     "multer": "^1.4.1",
     "multiparty": "^4.2.1",
     "mv": "^2.1.1",
-    "ngrok": "^3.2.2",
+    "ngrok": "^3.2.5",
     "node-cache": "^4.2.0",
     "node-fetch": "^2.6.1",
     "node-ffprobe": "^1.2.2",
@@ -123,6 +123,7 @@
     "tumblr.js": "^1.1.1",
     "twilio": "^3.31.0",
     "twit": "^2.2.11",
+    "urlsafe-base64": "^1.0.0",
     "validator": "^7.0.0",
     "web-push": "^3.4.4",
     "webhook-discord": "^3.5.1",
