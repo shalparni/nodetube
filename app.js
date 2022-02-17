@@ -124,7 +124,7 @@ if(cluster.isMaster){
 
     mongoose.connect(mongoUri, {
       keepAlive: true,
-      reconnectTries: Number.MAX_VALUE,
+      // reconnectTries: Number.MAX_VALUE,
       useNewUrlParser: true
     });
 

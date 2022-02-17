@@ -15,8 +15,8 @@ const mv = require('mv');
 const fs = require('fs-extra');
 const mkdirp = Promise.promisifyAll(require('mkdirp'));
 const randomstring = require('randomstring');
-const mailJet = require('../../lib/emails/mailjet');
-const sendgrid = require('../../lib/emails/sendgrid');
+// const mailJet = require('../../lib/emails/mailjet');
+// const sendgrid = require('../../lib/emails/sendgrid');
 
 const mailTransports = require('../../config/nodemailer');
 // const {sendProtonMail} = require('../../config/protonmailTransport');

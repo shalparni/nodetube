@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   node:
-    container_name: nodetube
+    container_name: nodetube-opensuse
     build:
       context: .
       dockerfile: Dockerfile

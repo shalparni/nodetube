@@ -41,7 +41,7 @@ mongoose.set('useUnifiedTopology', true);
 
 mongoose.connect(mongoUri, {
   keepAlive: true,
-  reconnectTries: Number.MAX_VALUE
+  // reconnectTries: Number.MAX_VALUE
 });
 
 mongoose.connection.on('error', (err) => {
