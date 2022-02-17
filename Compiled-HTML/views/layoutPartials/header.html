@@ -1,0 +1,457 @@
+<style>@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+/*body {*/
+/*margin: 30px;*/
+/*}*/
+
+.headerContainer {
+  padding: 0px;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  width: 600px;
+  height: 36px;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+}
+
+.search input {
+  text-indent: 9px;
+}
+
+.search .fa-search {
+
+}
+
+.singleLetter {
+  display: none;
+  color: #0FDA01;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 28px;
+  position: absolute;
+  top: -30px;
+}
+
+/*.formSpan {*/
+/*color: grey;*/
+/*position: absolute;*/
+/*right: -78px;*/
+/*top: -1px;*/
+/*background-color: #eaeaea;*/
+/*padding: 10px 26px;*/
+/*border: 1px solid #cec0c0;*/
+/*}*/
+
+/* ===========================
+   ====== Medua Query for Search Box ======
+   =========================== */
+
+/** post button starts to hit search bar **/
+@media (max-width: 753px){
+  /*input[name="searchValue"] {*/
+  /*display: none;*/
+  /*}*/
+
+  .postButton {
+    display: none !important;
+  }
+
+  .postIcon {
+    display: inline !important;
+  }
+}
+
+/* when plus button starts to hit search bar */
+@media (max-width: 593px) {
+
+  .fullTitle {
+    display: none !important;
+  }
+
+  .singleLetter {
+    display: inline !important;
+    left: -32px;
+  }
+
+  .search-bar {
+    width: 57% !important;
+    margin-left: 70px !important;
+  }
+
+  .hamburgerDropdown {
+    left: 11px !important;
+  }
+
+  .permBar {
+    display: none;
+  }
+}
+
+/* when plus button starts to hit search bar */
+/* everything under 439px  */
+@media (max-width: 439px) {
+  .fullTitle {
+    display: none !important;
+  }
+
+  .singleLetter {
+    display: inline !important;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .searchPlaceHolder, .uploadButton {
+    display: block !important;
+  }
+
+}
+
+
+
+/*@media (min-width: 320px) {*/
+/*!* smartphones, iPhone, portrait 480x320 phones *!*/
+/*input[name="searchValue"] {*/
+/*background: pink;*/
+/*}*/
+
+/*}*/
+
+/*@media (min-width: 481px) {*/
+/*!* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. *!*/
+/*input[name="searchValue"] {*/
+/*background: yellow;*/
+/*}*/
+
+/*}*/
+
+/*@media (min-width: 641px) {*/
+/*!* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones *!*/
+/*input[name="searchValue"] {*/
+/*background: purple;*/
+/*}*/
+
+/*!*.postButton {*!*/
+/*!*display:none !important;*!*/
+/*!*}*!*/
+
+/*}*/
+
+/*@media (min-width: 961px) {*/
+/*!* tablet, landscape iPad, lo-res laptops ands desktops *!*/
+/*input[name="searchValue"] {*/
+/*background: green;*/
+/*}*/
+
+/*}*/
+
+/*@media (min-width: 1025px) {*/
+/*!* big landscape tablets, laptops, and desktops *!*/
+/*input[name="searchValue"] {*/
+/*background: blue;*/
+/*}*/
+
+/*}*/
+
+/*@media (min-width: 1281px) {*/
+/*!* hi-res laptops and desktops *!*/
+/*input[name="searchValue"] {*/
+/*background: red;*/
+/*}*/
+/*}*/
+
+
+.box {
+  width: 80%;
+}
+
+.search-bar {
+  width: 55%;
+  position: relative;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 88%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px 0 0 2px;
+  z-index: 2;
+}
+
+input:focus {
+  border: 1.1px solid #1c62b9;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.searchButton {
+  position: absolute;
+  width: 14%;
+  height: 33px;
+  border: 1px solid #BEBEBE;
+  border-left: 0;
+  top: 11px;
+  right: 0;
+  border-radius: 0px 2px 2px 0;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f0f0f0;
+  z-index: 1
+}
+
+.search-uploads-button {
+  border: 1px solid #5b5a5a;
+  z-index: 999999;
+  background-color: #313131 !important;
+}
+
+.search-query-input {
+  border: 1px solid #5b5a5a !important;
+  color:white !important;
+  background-color:#313131;
+}
+
+.search-query-input::placeholder { /* Most modern browsers support this now. */
+  color: grey;
+}
+
+.search-uploads-button:hover i {
+  opacity: .95;
+  color: white;
+}
+
+
+.searchIcon {
+  position: absolute;
+  left: 44%;
+  top: 29%;
+  color: #a7a3a3;
+}
+
+.searchExpander, .uploadButton {
+  position: absolute;
+  top: 24px;
+  right: 111px;
+  font-size: 22px;
+  color: grey;
+}
+
+.signInDiv {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 9px 23px;
+  border-radius: 3px;
+}
+
+.signInAnchor {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+.secondLine {
+  margin-top: -54px !important;
+  padding-left: 56px;
+  background-color: #141414;
+}
+
+@media (max-width: 927px) {
+  .diceIcon {
+    visibility: hidden;
+  }
+
+}
+
+.postButton {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+.search-uploads-button {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+.postButton:hover {
+  background-color: #212121 !important;
+}
+
+.search-uploads-button:hover {
+  background-color: #212121 !important;
+}
+
+
+
+
+</style><div class="container headerContainer fixed-top" style="opacity:1;background-color:white;margin:0;max-width:100%;padding:0"><!--.search1--><!--    form.search-form--><!--        input(type='text', placeholder='Search for books, authors, categories and more..')--><!--        input(type='submit', value='Submit')--><div class="secondLine" style="float:left;margin-top:8px;border-bottom: 1px solid #cec0c0;width:100%;box-shadow:-3px 11px 10px -10px rgba(0,0,0,0.51);"><a class="hamburgerDropdown" href="#" style="position:absolute;left:28px;"><img src="/images/white-burger.jpg" style="width:52px;display:inline-block;" onclick="toggleNav()"/></a><a href="/" style="position:absolute;left:99px;top:15px;"><p class="fullTitle" style="text-transform:uppercase;display:inline-block;color:#ffffff;font-size:25px;font-weight:900;"></p><p class="singleLetter" style="text-transform:uppercase;color:#ffffff;"></p></a><div class="searchPlaceHolder" style="height:56px;display:inline-block;display:none;"><a href="#"><i class="fas fa-search searchExpander searchExpanderButton"></i><i class="fas fa-arrow-left searchExpander backButtonIcon" style="left:17px;display:none;width:70px;"></i></a></div><div class="search-bar" style="width:45%;margin-left:200px;"><input type="hidden" name="_csrf"/><input class="search-query-input" style="margin-top:11px;margin-bottom:10px;" type="text" placeholder="Search" name="searchValue" value=""/><button class="search-uploads-button searchButton" style="right:-6px;background-color:black;"><i class="fas fa-search searchIcon"></i></button></div><!-- UPGRADE ICON--><!--a(href="#" style="position: absolute;top: 21px;right: 325px;")--><!--    h7(style="font-size:15px") Upgrade--><a class="diceIcon signInAnchor" href="/random" style="right:121px;"><i class="fas fa-random" aria-hidden="true" style="cursor:pointer;color:#b9b9b9;font-size:32px;margin-top:3px;margin-right:5px;"></i></a><!--a.signInAnchor(href="/random" style="background-color:white;right:121px;")--><!--  div.signInDiv(style="")--><!--    i.fas.fa-dice--><a class="signInAnchor" href="/login"><div class="signInDiv" style="background-color: #313131;border: 1px solid #848484;"><h7 style="display:inline-block;color:white;">Sign In</h7></div></a></div></div><script>$(document).ready(function () {
+
+  // whatever search expander is
+  $('.searchExpander').click(function () {
+    console.log('something')
+
+    // hide the sign in div
+    $('.signInDiv').hide();
+
+
+    // show the back button
+    $('.backButtonIcon').css({
+      display: 'block'
+    });
+
+    // hide single letter (now just says newtube)
+    var elem = $('.singleLetter');
+    elem[0].style.removeProperty('display');
+    elem[0].style.setProperty('display', 'none', 'important');
+
+    // hide single letter
+    var elem2 = $('.searchPlaceHolder');
+    console.log(elem2[0]);
+    elem2[0].style.removeProperty('display');
+    elem2[0].style.setProperty('display', 'inline', 'important');
+
+    // post icon probably now upload button
+    var elem1 = $('.postIcon');
+    if(elem1[0]){
+      elem1[0].style.removeProperty('display');
+      elem1[0].style.setProperty('display', 'none', 'important');
+    }
+
+    // shwo the search bar again
+    $('.search-bar, .search-form').css({
+      display: 'inline'
+    });
+
+    $('.search-query-input').css({
+      'margin-left' : '-61px'
+    });
+
+
+    $('.hamburgerDropdown, .userImage, .searchExpanderButton').css({
+      display: 'none'
+    });
+
+    $('.searchButton').css({
+      top: '-8px'
+    })
+
+    // no need to autofocus
+    $('.search-query-input').focus();
+
+  })
+
+
+
+
+  // REVERSE EFFECT
+  // show the old header
+  $('.backButtonIcon').click(function () {
+    console.log('something else ')
+
+    $('.signInDiv').show();
+
+    $('.backButtonIcon, .singleLetter, .search-bar, .search-form').css({
+      display: 'none'
+    });
+
+    $('.hamburgerDropdown, .searchExpanderButton, .userImage').css({
+      display: 'block'
+    });
+
+    $('.postIcon').css({
+      display: 'inline'
+    });
+
+    $('.searchPlaceHolder').css({
+      display: 'inline-block'
+    });
+
+
+  })
+
+});
+</script><script>$('.subscribed-link').on('release click', function(e){
+  e.preventDefault();
+
+  swal({
+    text: "Please register to subscribe to content",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Sign Up Now'
+  }).then(function (result) {
+    if (result.value) {
+      window.location.href = "/signup";
+    }
+  })
+
+
+})
+</script><!-- hide the header when you scroll down--><!-- first I have to make it fixed to the top--><script>$(document).ready(function () {
+  // grab an element
+  var myElement = document.querySelector('.navbar');
+  // construct an instance of Headroom, passing the element
+  var headroom = new Headroom(myElement);
+  // initialise
+  headroom.init();
+
+  console.log(headroom);
+
+  console.log("ready!");
+});
+
+</script><script>$(document).ready(function () {
+
+
+
+  console.log('lets')
+
+  var orderBy = ''
+  var mediaType = ''
+  var searchQuery = ''
+  var searchType = '' // upload or user
+
+  console.log(orderBy, mediaType, searchQuery, searchType)
+
+  if (!orderBy) {
+    orderBy = 'newToOld'
+  }
+
+
+  console.log(orderBy, mediaType, searchQuery, searchType)
+
+  // $('.search-query-input').focus();
+
+
+
+
+  // TODO: how to capture enter from input
+  $(".search-query-input").on('keyup', function (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      var userSearchQuery = $('.search-query-input').val()
+
+      window.location = '/search?orderBy=' + orderBy + '&mediaType=' + mediaType + '&searchQuery=' + userSearchQuery + '&searchType=' + searchType
+      // Do something
+    }
+  });
+
+
+  // capture submit
+  $('.search-uploads-button').click(function () {
+
+    var userSearchQuery = $('.search-query-input').val()
+
+    window.location = '/search?orderBy=' + orderBy + '&mediaType=' + mediaType + '&searchQuery=' + userSearchQuery + '&searchType=' + searchType
+  });
+
+});</script>

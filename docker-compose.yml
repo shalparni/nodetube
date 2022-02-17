@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   node:
-    container_name: nodetube-opensuse
+    container_name: srnstreamer-opensuse
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,30 +14,30 @@ services:
       - ./uploads:/app/uploads
     environment:
       - REDIS_HOST=redis
-      - MONGODB_URI=mongodb://nodetube-mongo:27017/nodetube
+      - MONGODB_URI=mongodb://srnstreamer-mongo:27017/srnstreamer
     depends_on:
       - redis
       - mongo
     command: npm start
     networks:
-      - nodetube-network
+      - srnstreamer-network
 
   mongo:
-    container_name: nodetube-mongo
+    container_name: srnstreamer-mongo
     image: mongo:4.4
     volumes:
       - ./data/db:/data/db
     ports:
       - "27011:27017"
     networks:
-      - nodetube-network
+      - srnstreamer-network
 
   redis:
-    container_name: nodetube-redis
+    container_name: srnstreamer-redis
     image: redis
     networks:
-      - nodetube-network
+      - srnstreamer-network
 
 networks:
-  nodetube-network:
+  srnstreamer-network:
     driver: bridge

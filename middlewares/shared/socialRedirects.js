@@ -2,7 +2,7 @@
 
 async function middleware(req, res, next){
   if(req.path == '/reddit'){
-    res.redirect('https://reddit.com/r/nodetube');
+    res.redirect('https://reddit.com/r/srnstreamer');
   }
 
   if(req.path == '/twitter'){
@@ -10,7 +10,7 @@ async function middleware(req, res, next){
   }
 
   if(req.path == '/riot'){
-    res.redirect('https://riot.im/app/#/room/#nodetube:matrix.org');
+    res.redirect('https://riot.im/app/#/room/#srnstreamer:matrix.org');
   }
 
   if(req.path == '/discord'){
@@ -18,15 +18,15 @@ async function middleware(req, res, next){
   }
 
   if(req.path == '/fosstodon'){
-    res.redirect('https://fosstodon.org/@nodetube');
+    res.redirect('https://fosstodon.org/@srnstreamer');
   }
 
   if(req.path == '/github'){
-    res.redirect('https://github.com/mayeaux/nodetube');
+    res.redirect('https://github.com/mayeaux/srnstreamer');
   }
 
   if(req.path == '/wiki'){
-    res.redirect('https://github.com/mayeaux/nodetube/wiki');
+    res.redirect('https://github.com/mayeaux/srnstreamer/wiki');
   }
 
   if(req.path == '/paypal'){

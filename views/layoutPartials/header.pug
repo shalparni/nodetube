@@ -52,8 +52,8 @@ style.
   /*}*/
 
   /* ===========================
-    ====== Medua Query for Search Box ======
-    =========================== */
+     ====== Medua Query for Search Box ======
+     =========================== */
 
   /** post button starts to hit search bar **/
   @media (max-width: 753px){
@@ -292,16 +292,16 @@ style.
   .search-uploads-button:hover {
     background-color: #212121 !important;
   }
-
-
+  
+  
 
 
 
 .container.headerContainer.fixed-top(style="opacity:1;background-color:white;margin:0;max-width:100%;padding:0")
   //.search1
   //    form.search-form
-  //        input(type='text' placeholder='Search for books, authors, categories and more..')
-  //        input(type='submit' value='Submit')
+  //        input(type='text', placeholder='Search for books, authors, categories and more..')
+  //        input(type='submit', value='Submit')
 
 
 
@@ -321,7 +321,7 @@ style.
 
 
     div.search-bar(style="width:45%;margin-left:200px;")
-      input(type='hidden' name='_csrf', value=_csrf)
+      input(type='hidden', name='_csrf', value=_csrf)
       input.search-query-input(style="margin-top:11px;margin-bottom:10px;" type='text', placeholder=`${  searchQuery !== undefined ? searchQuery : 'Search'   }` name='searchValue' value="")
       button.search-uploads-button.searchButton(style="right:-6px;background-color:black;")
         i.fas.fa-search.searchIcon
@@ -361,7 +361,7 @@ style.
 
 
       a(href="/upload" style="position: absolute;top: 13px;right: 79px;")
-        div.postButton(style="display:inline-block;border: 1px solid #848484;padding: 9px 36px;margin-left:15px;border-radius: 3px;background-color: #313131;" data-toggle='modal' data-target='#exampleModal')
+        div.postButton(style="display:inline-block;border: 1px solid #848484;padding: 9px 36px;margin-left:15px;border-radius: 3px;background-color: #313131;" data-toggle='modal', data-target='#exampleModal')
           //a(href="/donate")
           h7(style="display:inline-block;color:white;") Upload
 
@@ -369,9 +369,9 @@ style.
         div.postIcon
           i.fas.fa-upload.uploadButton(style="top: 11px;right: -6px;display:none;")
 
-        //div.postIcon(style="display:none;" data-toggle='modal' data-target='#exampleModal')
+        //div.postIcon(style="display:none;" data-toggle='modal', data-target='#exampleModal')
         //  img(src="/images/whiteDollarIcon.png" style="width:25px;margin-top:9px;")
-        //h7(style="display:inline-block;color:black;") Post
+          //h7(style="display:inline-block;color:black;") Post
 
         a.userImage(href="#" style="position: absolute;top: 20px;right: 29px;")
           if user.customThumbnail

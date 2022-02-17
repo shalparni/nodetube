@@ -7,7 +7,7 @@ require('intl-messageformat/dist/locale-data/en');
 const timeAgoEnglish = new javascriptTimeAgo('en-US');
 
 const pushEndpointSchema = new mongoose.Schema({
-  // the nodetube user associated with this endpoint
+  // the srnstreamer user associated with this endpoint
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',

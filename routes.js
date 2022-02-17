@@ -121,7 +121,7 @@ function livestreamRoutes(app){
   // app.get(/\/user\/(.+)\/live\/staging/, livestreamController.getStaging);
   // app.get(/\/user\/(.+)\/live/, livestreamController.getLive);
 
-  /** redirect all routes to the nodetube.live equivalent **/
+  /** redirect all routes to the srnstreamer.live equivalent **/
   app.get('*', function(req, res){
 
     const frontendAppUrl = `https://${domainNameAndTLD}`;

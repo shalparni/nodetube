@@ -1,10 +1,10 @@
 {
-  "name": "nodetube",
+  "name": "srnstreamer",
   "version": "1.0.0",
   "description": "Video, audio and image hosting",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mayeuax/nodetube"
+    "url": "https://github.com/mayeuax/srnstreamer"
   },
   "engines": {
     "node": "^8 || ^10"

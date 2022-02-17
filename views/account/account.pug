@@ -129,7 +129,7 @@ block content
           //  - Unlisted, private and scheduled uploads
             - Built in monetization via direct payments (COMING SOON)
             - One-click complete YouTube backup (including future uploads)
-            - Access to NodeTube Recording Studio (COMING EVENTUALLY)
+            - Access to SRNSTREAMER Recording Studio (COMING EVENTUALLY)
 
             //- NewTube Recording Studio (Coming Soon)
 
@@ -472,7 +472,7 @@ block content
 
               window.location = "/account?emailDeleted=true";
             } else {
-              swal("Something didn't work, please contact NodeTube at ceo@nodetube.live or via the widget in the bottom right corner")
+              swal("Something didn't work, please contact SRNSTREAMER at ceo@srnstreamer.live or via the widget in the bottom right corner")
             }
             console.log(data);
           },
@@ -564,7 +564,7 @@ block content
       console.log(username, uploadToken)
 
       $('.livestream-button').on('click', function(){
-        swal('Please stream to rtmp://broadcast.nodetube.live/live/' + username  + '?key=' + uploadToken + ' \n\n You will be live at https://live.nodetube.live/User/' + username)
+        swal('Please stream to rtmp://broadcast.srnstreamer.live/live/' + username  + '?key=' + uploadToken + ' \n\n You will be live at https://live.srnstreamer.live/User/' + username)
       })
 
   // stripe functionality
@@ -598,7 +598,7 @@ block content
               if (data == 'success') {
                 window.location = "/account?to=nt-plus";
               } else {
-                swal("Something didn't work, please contact NodeTube at ceo@nodetube.live or via the widget in the bottom right corner")
+                swal("Something didn't work, please contact SRNSTREAMER at ceo@srnstreamer.live or via the widget in the bottom right corner")
               }
               console.log(data);
             },

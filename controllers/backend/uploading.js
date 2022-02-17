@@ -361,7 +361,7 @@ exports.postFileUpload = async(req, res) => {
 
         // TODO: make this smarter, url etc
         if(requireModeration && moderationUpdatesToDiscord){
-          await sendMessageToDiscord(`Pending upload requires moderation on NodeTube.live. https://newtube.app/user/test/${upload.uniqueTag} https://newtube.app/pending ${new Date()}`);
+          await sendMessageToDiscord(`Pending upload requires moderation on SRNSTREAMER.live. https://newtube.app/user/test/${upload.uniqueTag} https://newtube.app/pending ${new Date()}`);
         }
 
         /** FILE PROCESSING */

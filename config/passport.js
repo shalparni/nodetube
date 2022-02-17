@@ -216,7 +216,7 @@ exports.isAuthorized = (req, res, next) => {
 // passport.use(new YoutubeV3Strategy({
 //     clientID: process.env.YOUTUBE_CLIENT_ID,
 //     clientSecret: process.env.YOUTUBE_CLIENT_SECRET,
-//     callbackURL: "https://nodetube.ngrok.io/auth/youtube/callback",
+//     callbackURL: "https://srnstreamer.ngrok.io/auth/youtube/callback",
 //     scope: ['https://www.googleapis.com/auth/youtube.readonly'],
 //     passReqToCallback: true
 //   },

@@ -1,5 +1,5 @@
 #failing with a weird bug, see:
-#see: https://travis-ci.org/github/mayeaux/nodetube/builds/689876390
+#see: https://travis-ci.org/github/mayeaux/srnstreamer/builds/689876390
 language: node_js
 node_js:
   - "10"

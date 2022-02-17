@@ -1,4 +1,4 @@
-// nodetube stripe library
+// srnstreamer stripe library
 const stripe = require('../../lib/payments/stripe');
 
 // two helper functions to update user to plus/remove their plus features

@@ -1,4 +1,4 @@
-const instanceBrandName = process.env.INSTANCE_BRAND_NAME || 'NodeTube';
+const instanceBrandName = process.env.INSTANCE_BRAND_NAME || 'SRNSTREAMER';
 
 const categories = [
   {

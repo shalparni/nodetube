@@ -25,7 +25,7 @@ cd ~
 
 sudo apt update
 
-# install dependencies for nodetube
+# install dependencies for srnstreamer
 # may take a few minutes
 sudo apt-get -y install \
     git build-essential nginx youtube-dl nload nano python-setuptools python-dev build-essential tcptrack  vnstat nethogs redis-server build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip vnstat nload ffmpeg
@@ -58,8 +58,8 @@ nvm install 8
 nvm use 8
 
 # replace with https
-git clone https://github.com/mayeaux/nodetube.git
-cd nodetube
+git clone https://github.com/mayeaux/srnstreamer.git
+cd srnstreamer
 
 #
 npm install
