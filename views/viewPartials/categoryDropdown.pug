@@ -1,13 +1,13 @@
-div.search-upload-buttons-container.dropdown(style="display:inline;padding-right:15px;")
-    button#dropdownMenu1.fw.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown' style="border-radius:5px;")
-        if category
-            | Category: #{categoryObj.displayName} &nbsp
-            span.caret
-        else
-            | Select A Category &nbsp
-            span.caret
+//- div.search-upload-buttons-container.dropdown(style="display:inline;padding-right:15px;")
+//-     button#dropdownMenu1.fw.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown' style="border-radius:5px;")
+//-         if category
+//-             | Category: #{categoryObj.displayName} &nbsp
+//-             span.caret
+//-         else
+//-             | Select A Category &nbsp
+//-             span.caret
 
-    ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
-        each category in categories
-            li(role='presentation')
-                a(href=`/media/${mediaBrowsingType}/1?media=${mediaType}&category=${category.name}&within=${within}`) #{category.displayName}
+//-     ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+//-         each category in categories
+//-             li(role='presentation')
+//-                 a(href=`/media/${mediaBrowsingType}/1?media=${mediaType}&category=${category.name}&within=${within}`) #{category.displayName}

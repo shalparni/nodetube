@@ -307,8 +307,8 @@ style.
 
   div.secondLine(style="float:left;margin-top:8px;border-bottom: 1px solid #cec0c0;width:100%;box-shadow:-3px 11px 10px -10px rgba(0,0,0,0.51);")
 
-    a.hamburgerDropdown(href="#" style="position:absolute;left:28px;")
-      img(src="/images/white-burger.jpg" style="width:52px;display:inline-block;" onclick='toggleNav()')
+    //- a.hamburgerDropdown(href="#" style="position:absolute;left:28px;")
+    //-   img(src="/images/white-burger.jpg" style="width:52px;display:inline-block;" onclick='toggleNav()')
 
     a(href="/" style="position:absolute;left:99px;top:15px;")
       p.fullTitle(style="text-transform:uppercase;display:inline-block;color:#ffffff;font-size:25px;font-weight:900;") #{brandName}
@@ -317,14 +317,14 @@ style.
     div.searchPlaceHolder(style="height:56px;display:inline-block;display:none;")
       a(href="#")
         i.fas.fa-search.searchExpander.searchExpanderButton
-        i.fas.fa-arrow-left.searchExpander.backButtonIcon(style="left:17px;display:none;width:70px;")
+        i.fas.fa-arrow-left.searchExpander.backButtonIcon(style="left:20px;display:none;width:60px;")
 
 
-    div.search-bar(style="width:45%;margin-left:200px;")
-      input(type='hidden', name='_csrf', value=_csrf)
-      input.search-query-input(style="margin-top:11px;margin-bottom:10px;" type='text', placeholder=`${  searchQuery !== undefined ? searchQuery : 'Search'   }` name='searchValue' value="")
-      button.search-uploads-button.searchButton(style="right:-6px;background-color:black;")
-        i.fas.fa-search.searchIcon
+    //- div.search-bar(style="width:45%;margin-left:300px;")
+    //-   input(type='hidden', name='_csrf', value=_csrf)
+    //-   input.search-query-input(style="margin-top:11px;margin-bottom:10px;" type='text', placeholder=`${  searchQuery !== undefined ? searchQuery : 'Search'   }` name='searchValue' value="")
+    //-   button.search-uploads-button.searchButton(style="right:-6px;background-color:black;")
+    //-     i.fas.fa-search.searchIcon
 
     // UPGRADE ICON
     //a(href="#" style="position: absolute;top: 21px;right: 325px;")
@@ -333,8 +333,8 @@ style.
     if !user
 
 
-      a.diceIcon.signInAnchor(href="/random" style="right:121px;")
-        i.fas.fa-random(aria-hidden="true" style="cursor:pointer;color:#b9b9b9;font-size:32px;margin-top:3px;margin-right:5px;")
+      //- a.diceIcon.signInAnchor(href="/random" style="right:121px;")
+      //-   i.fas.fa-random(aria-hidden="true" style="cursor:pointer;color:#b9b9b9;font-size:32px;margin-top:3px;margin-right:5px;")
 
 
 
@@ -348,10 +348,10 @@ style.
 
 
     if user
+      //- If you need to get random videos from the database
+      //- a.diceIcon.signInAnchor(href="/random" style="right:212px;")
 
-      a.diceIcon.signInAnchor(href="/random" style="right:212px;")
-
-        i.fas.fa-random(aria-hidden="true" style="cursor:pointer;color:#b9b9b9;font-size:32px;margin-top:3px;margin-right:5px;")
+      //-   i.fas.fa-random(aria-hidden="true" style="cursor:pointer;color:#b9b9b9;font-size:32px;margin-top:3px;margin-right:5px;")
 
         //img(src="/images/random.png" style="height:39px;margin-top:2px;opacity:0.9;")
 
