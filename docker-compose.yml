@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   node:
-    container_name: srnstreamer-opensuse
+    container_name: srnstreamer
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,7 +14,7 @@ services:
       - ./uploads:/app/uploads
     environment:
       - REDIS_HOST=redis
-      - MONGODB_URI=mongodb://srnstreamer-mongo:27017/srnstreamer
+      - MONGODB_URI=mongodb://admin:password@srnstreamer-mongo:27017/srnstreamer
     depends_on:
       - redis
       - mongo
@@ -25,10 +25,26 @@ services:
   mongo:
     container_name: srnstreamer-mongo
     image: mongo:4.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./data/db:/data/db
     ports:
       - "27011:27017"
+    networks:
+      - srnstreamer-network
+  
+  mongo-express:
+    container_name: srnstreamer-mongo-express
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_URL: mongodb://admin:password@srnstreamer-mongo:27017/srnstreamer
     networks:
       - srnstreamer-network
 

@@ -1,5 +1,4 @@
-FROM bougyman/voidlinux as void
-RUN xbps-install -Syu git tar python nodejs-lts base-devel
+FROM node:12 as node
 COPY app* package* .env.settings.sample .env.private.sample copySettingsAndPrivateFiles.js Procfile routes.js /app/
 COPY bin /app/bin/
 COPY caching /app/caching/
@@ -14,7 +13,7 @@ COPY public /app/public/
 COPY scripts /app/scripts/
 COPY views /app/views/
 
-FROM void as builder
+FROM node as builder
 WORKDIR /app/
 RUN npm i --production && \
     node ./copySettingsAndPrivateFiles.js && \
@@ -25,10 +24,9 @@ RUN npm i --production && \
     rm -rf /app/node_modules/webp-converter/bin/libwebp_osx && \
     strip /app/node_modules/ngrok/bin/ngrok
 
-FROM bougyman/voidlinux
+FROM node:12
 WORKDIR /app/
 COPY --from=builder /app/ /app/
-RUN xbps-install -Syu tar python nodejs-lts && rm -rf /var/cache/xbps && \
-    ln -s /app/node_modules/ffprobe-static/bin/linux/x64/ffprobe /app/node_modules/@ffmpeg-installer/linux-x64/ffmpeg /usr/local/bin/
+RUN ln -s /app/node_modules/ffprobe-static/bin/linux/x64/ffprobe /app/node_modules/@ffmpeg-installer/linux-x64/ffmpeg /usr/local/bin/
 EXPOSE 8080
 CMD ["npm", "start"]

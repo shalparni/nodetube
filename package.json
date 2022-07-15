@@ -4,7 +4,7 @@
   "description": "Video, audio and image hosting",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mayeuax/srnstreamer"
+    "url": "https://github.com/overtunned/srnstreamer"
   },
   "engines": {
     "node": "^8 || ^10"
