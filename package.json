@@ -74,7 +74,7 @@
     "ipstack": "^0.1.1",
     "javascript-time-ago": "^0.4.15",
     "lastfm": "^0.9.3",
-    "lob": "^3.9.0",
+    "lob": "^7.1.0",
     "lodash": "^4.17.19",
     "lusca": "^1.6.1",
     "mail-listener2": "^0.3.1",
